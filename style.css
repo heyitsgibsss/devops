@@ -1,80 +1,102 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    background-color: #f4f6f9;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 250px;
-    background-color: #333;
-    color: #fff;
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar h2 {
+h1 {
     text-align: center;
-    margin-bottom: 30px;
-}
-
-.sidebar ul {
-    list-style: none;
-}
-
-.sidebar ul li {
-    margin: 20px 0;
-}
-
-.sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-}
-
-/* Content */
-.content {
-    flex: 1;
-    padding: 20px;
-}
-
-header {
     margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 24px;
     color: #333;
 }
 
-/* Cards */
-.cards {
+.form {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.card {
-    flex: 1;
-    min-width: 200px;
-    padding: 20px;
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.table td {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+.table .btn {
+    padding: 5px 10px;
+    font-size: 14px;
 }
 
-.card p {
-    color: #666;
+.table .btn-edit {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.table .btn-edit:hover {
+    background-color: #218838;
+}
+
+.table .btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.table .btn-delete:hover {
+    background-color: #c82333;
 }
